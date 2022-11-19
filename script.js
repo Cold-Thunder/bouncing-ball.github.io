@@ -55,7 +55,7 @@ class Circle{
 
 let cirArr = [];
 
-for(let i = 0; i <= 20; i++){
+for(let i = 0; i <= 40; i++){
 	let ra = Math.random()*30;
 	let x = Math.random()* innerWidth;
 	let y = Math.random()* innerHeight;
@@ -71,12 +71,12 @@ for(let i = 0; i <= 20; i++){
 	if(y < 255 && y > 0){
 		g = y;
 	}else{
-		g = 120;
+		g = 100;
 	}
 	if(ra < 255 && ra > 0){
 		b = ra;
 	}else{
-		b = 255;
+		b = 100;
 	}
 //color code end
 	let circle = new Circle(x, y, ra, dx, dy, r, g, b)
